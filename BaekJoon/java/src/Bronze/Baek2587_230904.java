@@ -30,5 +30,6 @@ public class Baek2587_230904 {
         }
         System.out.println(result);
         System.out.println(arr[2]);
+        sc.close();
     }
 }

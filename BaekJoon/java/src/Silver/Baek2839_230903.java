@@ -8,6 +8,7 @@ public class Baek2839_230903 {
 
         int inputNumber = sc.nextInt();
 
+        sc.close();
         if (inputNumber == 4 || inputNumber == 7) {
             System.out.println(-1);
         } else if (inputNumber % 5 == 0) {

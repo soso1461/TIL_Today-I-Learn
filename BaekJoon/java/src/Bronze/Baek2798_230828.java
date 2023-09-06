@@ -18,6 +18,7 @@ public class Baek2798_230828 {
     int result = search(card, count, goal);   // # static search에서 값 가져옴
 
     System.out.println(result);
+    sc.close();
   }
 
   static int search(int[] card, int count, int goal) {
@@ -42,5 +43,6 @@ public class Baek2798_230828 {
             result = temp;
           } } } }
     return result;
+    
   }
 }

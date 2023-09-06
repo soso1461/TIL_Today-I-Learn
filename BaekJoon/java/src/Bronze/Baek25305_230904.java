@@ -23,6 +23,7 @@ public class Baek25305_230904 {
                 }
             }
         }
-        System.out.println(arr[cut-1]);
+        System.out.println(arr[cut - 1]);
+        sc.close();
     }
 }

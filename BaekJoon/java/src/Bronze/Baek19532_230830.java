@@ -13,6 +13,8 @@ public class Baek19532_230830 {
         int e = sc.nextInt();
         int f = sc.nextInt();
         
+        sc.close();
+        
         int answerX = 0;
         int answerY = 0;
         for (int i = -999; i < 1000; i++) {

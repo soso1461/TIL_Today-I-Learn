@@ -10,6 +10,7 @@ public class Baek1436_230902 {
 
         int inputNumber = sc.nextInt();
 
+        sc.close();;
         int num = 666;
         int count = 1;
 

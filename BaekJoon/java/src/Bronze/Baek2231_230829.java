@@ -33,6 +33,7 @@ public class Baek2231_230829 {
     int result = findConstructor(N);
 
     System.out.println(result);
+    sc.close();
   }
 
   public static int findConstructor(int N) {
