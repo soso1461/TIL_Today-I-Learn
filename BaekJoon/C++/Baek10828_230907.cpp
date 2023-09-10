@@ -3,7 +3,7 @@
 
 using namespace std;
 
-struct stack {
+struct Stack {
     int arr[10000];
     int last;
 
@@ -37,7 +37,7 @@ int main()
 {
     int number;
     cin >> number;
-    stack s;
+    Stack s;
     s.init();
     for (; number--;) {
         string str;
