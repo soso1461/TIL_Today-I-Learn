@@ -127,9 +127,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Baek10866_230919.cpp" />
     <ClCompile Include="Baek1158_230918.cpp" />
     <ClCompile Include="Baek2164_230919.cpp" />
-    <ClCompile Include="BaekJoon.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
