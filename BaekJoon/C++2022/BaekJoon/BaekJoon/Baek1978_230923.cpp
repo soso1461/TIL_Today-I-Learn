@@ -10,7 +10,7 @@ int main() {
 	cin >> N;
 
 	int result = 0;
-
+	
 	for (int i = 0; i < N; i++) {
 		int num;
 		cin >> num;
