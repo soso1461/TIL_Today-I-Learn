@@ -15,7 +15,7 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Baek2609_230929.cpp">
+    <ClCompile Include="Baek1934_230930.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
   </ItemGroup>
