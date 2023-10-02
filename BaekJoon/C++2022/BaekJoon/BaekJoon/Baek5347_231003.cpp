@@ -1,8 +1,10 @@
 #include <iostream>
 
+typedef long long int ll;
+
 using namespace std;
 
-int gcd(int x, int y) {
+ll gcd(ll x, ll y) {
 	if (y == 0) {
 		return x;
 	}
@@ -17,9 +19,9 @@ int main() {
 	cin >> num;
 
 	for (int i = 0; i < num; i++) {
-		int a = 0, b = 0;
+		ll a, b;
 		cin >> a >> b;
-		long long result = static_cast<long long>(a) * b / (gcd(a, b));
+		ll result = a * b / (gcd(a, b));
 		cout << result << '\n';
 	}
 	
