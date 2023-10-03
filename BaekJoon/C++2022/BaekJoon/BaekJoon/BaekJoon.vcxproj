@@ -19,7 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Baek5347_231003.cpp" />
+    <ClCompile Include="Baek2960_231003.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -129,13 +129,6 @@
       <GenerateDebugInformation>true</GenerateDebugInformation>
     </Link>
   </ItemDefinitionGroup>
-  <ItemGroup>
-    <ClCompile Include="Baek10866_230919.cpp" />
-    <ClCompile Include="Baek1158_230918.cpp" />
-    <ClCompile Include="Baek1935_230920.cpp" />
-    <ClCompile Include="Baek1966_230922.cpp" />
-    <ClCompile Include="Baek2164_230919.cpp" />
-  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
