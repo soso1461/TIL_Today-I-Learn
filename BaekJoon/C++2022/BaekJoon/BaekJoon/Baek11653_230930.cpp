@@ -1,0 +1,21 @@
+#include <iostream>
+
+using namespace std;
+
+int main() {
+	ios::sync_with_stdio(0);
+	cin.tie(0);
+
+	int num;
+	cin >> num;
+
+	if (num == 1) return 0;
+
+	for (int i = 2; i <= num; i++) {
+		while (num % i == 0) {
+			cout << i << '\n';
+			num /= i;
+		}
+	}
+
+}

@@ -20,7 +20,7 @@ int main() {
 	
 	stack<double>q;
 	for (int i = 0; i < str.size(); i++) {
-		if (str[i] >= 'A' && arr[i] <= 'Z') {
+		if (str[i] >= 'A' && str[i] <= 'Z') {
 			q.push(arr[str[i] - 'A']);
 		}
 		else if (!q.empty()) {
