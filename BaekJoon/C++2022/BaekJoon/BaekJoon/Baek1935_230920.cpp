@@ -30,8 +30,6 @@ int main() {
 				tmp = q.top() + tmp;
 			}else if (str[i] == '-') {
 				tmp = q.top() - tmp;
-			}else if (str[i] == '+') {
-				tmp = q.top() + tmp;
 			}else if (str[i] == '*') {
 				tmp = q.top() * tmp;
 			}else if (str[i] == '/') {

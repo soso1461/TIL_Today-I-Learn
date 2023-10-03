@@ -27,5 +27,8 @@
     <ClCompile Include="Baek1935_230920.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Baek1966_230922.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
