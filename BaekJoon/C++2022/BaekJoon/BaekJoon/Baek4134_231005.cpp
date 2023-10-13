@@ -1,31 +1,38 @@
 #include <iostream>
-#include <cmath>
-
 using namespace std;
 
-typedef long long ll;
+bool isPrime(long long num)
+{
+    if (num <= 1)
+        return false;
 
-int main() {
-	ios::sync_with_stdio(0);
-	cin.tie(0);
+    if (num == 2 || num == 3)
+        return true;
 
-	ll num, n, m, ans;
-	cin >> num;
-	for (int i = 0; i < num; i++) {
-		cin >> n;
-		bool p = (n < 3) ? 1 : 0;
-		ans = (n < 3) ? 2 : n;
-		while (!p) {
-			m = sqrt(n) + 1;
-			for (int j = 2; j <= m; j++) {
-				if (n % j == 0) break;
-				if (j == m) {
-					ans = n;
-					p = 1;
-				}
-			}
-			n++;
-		}
-		cout << ans << '\n';
-	}
+    if (num % 2 == 0 || num % 3 == 0)
+        return false;
+
+    for (long long i = 5; i * i <= num; ++i)
+    {
+        if (num % i == 0 || num % (i + 2) == 0)
+            return false;
+    }
+
+    return true;
+}
+
+int main()
+{
+    ios::sync_with_stdio(0);
+    cin.tie(0);
+    long long N, n;
+    cin >> N;
+
+    for (int i = 0; i < N; ++i)
+    {
+        cin >> n;
+        while (!isPrime(n))
+            n++;
+        cout << n << endl;
+    }
 }
