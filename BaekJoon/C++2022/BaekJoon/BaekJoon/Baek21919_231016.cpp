@@ -1,45 +1,46 @@
 #include <iostream>
-#include <vector>
+#include <cmath>
 
 using namespace std;
 
-int gcd(int x, int y) {
+bool is_Prime(long long x) {
+	if (x < 2) return false;
+
+	for (int i = 2; i <= sqrt(x); i++) {
+		if (x % i == 0) return false;
+	}
+	return true;
+}
+
+long long gcd(long long x, long long y) {
 	if (y == 0) {
-		return 0;
+		return x;
 	}
 	return gcd(y, x % y);
+}
+
+long long lcm(long long x, long long y) {
+	return x * y / gcd(x, y);
 }
 
 int main() {
 	ios::sync_with_stdio(0);
 	cin.tie(0);
 
-	int A;
-	cin >> A;
+	int N;
+	cin >> N;
 
-	vector<int> num(A);
+	long long answer = 1;
 
-	int cnt = 0;
-
-	for (int i = 0; i < A; i++) {
-		int number;
-		cin >> number;
-		for (int div = 1; div < A; div++) {
-			if (i % div == 0) {
-				cnt++;
-			}
-		}
-		if (cnt == 2) {
-			num[i] += i;
-		}
-		cout << num[i];
+	for (int i = 0; i < N; i++) {
+		int input;
+		cin >> input;
+		if (is_Prime(input))
+			answer = lcm(answer, input);
 	}
-
-	/*for (int i = 0; i < A; i++) {
-		for (int j = i + 1; j < A; j++) {
-			num[i] += gcd(num[i], num[j]);
-		}
-	}*/
-
+	if (answer == 1) cout << -1;
+	else cout << answer;
+	
+	return 0;
 
 }
