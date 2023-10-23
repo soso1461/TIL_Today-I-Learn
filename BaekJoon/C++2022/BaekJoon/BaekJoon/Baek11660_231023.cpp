@@ -14,5 +14,10 @@ int main() {
 			cin >> graph[i][j];
 		}
 	}
+
+	int x1, y1, x2, y2;
+	cin >> x1 >> y1 >> x2 >> y2;
+
+	vector<
 	
 }
