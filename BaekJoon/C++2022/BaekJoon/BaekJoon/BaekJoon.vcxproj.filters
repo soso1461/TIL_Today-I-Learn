@@ -18,5 +18,8 @@
     <ClCompile Include="Baek2559_231023.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
+    <ClCompile Include="Baek1912_231023.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
