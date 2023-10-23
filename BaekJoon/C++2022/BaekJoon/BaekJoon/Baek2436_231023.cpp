@@ -43,7 +43,7 @@ int main() {
 
 	vector<pair<ll, ll>>answer;
 
-	for (long long i = gcd(a, b); i < (ll)sqrt(max) + 1; i += gcd(a, b)) {
+	for (ll i = gcd(a, b); i < sqrt(max) + 1; i += gcd(a, b)) {
 		ll j = max / i;
 		if (gcd(i, j) == gcd(a, b)) {
 			if (lcm(i, j) == lcm(a, b)) {
