@@ -19,8 +19,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="Baek15649_231024.cpp" />
-    <ClCompile Include="Baek15650_231025.cpp" />
+    <ClCompile Include="Baek15651_231025.cpp" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
